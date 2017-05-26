@@ -13,7 +13,7 @@ extension Config {
   }
   
   public func addRoutes(drop: Droplet) {
-    
+    print(drop.config.environment)
     
     // our first html page
     // localhost:8080/
