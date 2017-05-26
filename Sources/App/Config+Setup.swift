@@ -25,11 +25,13 @@ extension Config {
                      "Willkommen",
                      "Добро пожаловат",
                      "ようこそ"]
-      let randomPhrase = phrases[Int(arc4random_uniform(UInt32(phrases.count)))].appending(", Leaf!")
+      
+      //let randomPhrase = phrases[Int(arc4random_uniform(UInt32(phrases.count)))].appending(", Leaf!")
+      let phrase = phrases.last!
       
       let userNode = try Node(node: ["name" : "louis",
                                      "message" : "Welcome to the Jungle!",
-                                     "welcome_phrase" : randomPhrase])
+                                     "welcome_phrase" : phrase])
 
       return try drop.view.make("base", userNode)
     }
