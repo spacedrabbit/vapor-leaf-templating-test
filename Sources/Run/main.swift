@@ -22,4 +22,6 @@ try config.setup()
 let drop = try Droplet(config)
 try drop.setup()
 
+config.addRoutes(drop: drop)
+
 try drop.run()

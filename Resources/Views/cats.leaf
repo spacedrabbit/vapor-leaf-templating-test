@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    Let's look at some cats!
+  </head>
+  
+  <body>
+    
+    <!-- loop(<name of dict key>, <name of local var>) -->
+    #loop(cats_array, "cat") {
+      <h4>Hello #(cat.name)</h4>
+    }
+    
+  </body>
+  
+</html>

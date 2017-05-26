@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+  <html>
+
+  <!-- # import(){} -->
+
+  <head>
+    #embed("head")
+  </head>
+
+  <body>
+    #embed("body")
+  </body>
+
+</html>
